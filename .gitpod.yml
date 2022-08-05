@@ -1,2 +1,8 @@
 image:
-  file: .gitpod.Dockerfile
+  file: Dockerfile
+  context: .
+tasks:
+- command: npm install && npm run start
+ports:
+    - port: 6080
+    - port: 3000
