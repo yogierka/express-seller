@@ -12,7 +12,6 @@ RUN wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo ap
 
 # Refresh repository sources and install Insomnia
 RUN sudo apt-get update
-RUN sudo apt-get install -y insomnia
 # The powerful Visual Studio Code for someone that wants it
 RUN sudo apt-get install -y software-properties-common apt-transport-https
 RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
